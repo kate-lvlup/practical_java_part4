@@ -32,7 +32,6 @@ class Task7Test {
 		assertTrue(CheckAndPrintTools.isRetentionRuntime("com.softserve.edu.sprint4.task7.CamelCase"));
 	}
 
-	/* TODO Uncomment
 
 	@DisplayName("Validate methods of ClassForAnnot")
 	@Test
@@ -52,5 +51,4 @@ class Task7Test {
 		assertTrue(CheckAndPrintTools.checkClass2());
 	}
 
-	*/
 }
