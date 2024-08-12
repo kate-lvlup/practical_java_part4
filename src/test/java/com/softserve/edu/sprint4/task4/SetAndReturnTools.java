@@ -68,7 +68,6 @@ public class SetAndReturnTools {
         }
     }
 
-    /*  TODO  Uncomment
 
     public static boolean testNumberFromSecondPosition() {
         Integer[] numbers = new Integer[3];
@@ -88,5 +87,5 @@ public class SetAndReturnTools {
         return dates[1].equals(dateFromSecondPosition);
     }
 
-    */
+
 }

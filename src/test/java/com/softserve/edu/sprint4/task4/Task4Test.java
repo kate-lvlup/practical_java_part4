@@ -28,7 +28,6 @@ class Task4Test {
 		assertTrue(SetAndReturnTools.hasMethodParameterizedReturnType("com.softserve.edu.sprint4.task4.ArrayUtil", "setAndReturn", "T"));
 	}
 
-	/*  TODO  Uncomment
 
 	@DisplayName("Checks if setAndReturn method is return second element of array as Integer")
 	@Test
@@ -48,6 +47,6 @@ class Task4Test {
 		assertTrue(SetAndReturnTools.testDateFromSecondPosition());
 	}
 
-	*/
+
 
 }
