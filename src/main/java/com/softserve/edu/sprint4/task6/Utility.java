@@ -67,24 +67,31 @@ enum Level {
 }
 
 class Utility {
-    // Write sortPeople mentod here
-    //
-
-    // TODO
+    public static <T extends Person> void sortPeople(T[] people, Comparator<? super T> comparator) {
+        Arrays.sort(people, comparator);
+    }
 }
 
 class PersonComparator implements Comparator<Person> {
 
     @Override
     public int compare(Person person1, Person person2) {
-        return 0; // TODO Update
+        int nameComparison = person1.getName().compareTo(person2.getName());
+        if (nameComparison != 0) {
+            return nameComparison;
+        }
+        return Integer.compare(person1.getAge(), person2.getAge());
     }
 }
 
 class EmployeeComparator implements Comparator<Employee> {
 
     public int compare(Employee emp1, Employee emp2) {
-        return 0; // TODO Update
+        int personComparison = new PersonComparator().compare(emp1, emp2);
+        if (personComparison != 0) {
+            return personComparison;
+        }
+        return Double.compare(emp1.getSalary(), emp2.getSalary());
     }
 }
 
@@ -92,6 +99,10 @@ class DeveloperComparator implements Comparator<Developer> {
 
     @Override
     public int compare(Developer developer1, Developer developer2) {
-        return 0; // TODO Update
+        int employeeComparison = new EmployeeComparator().compare(developer1, developer2);
+        if (employeeComparison != 0) {
+            return employeeComparison;
+        }
+        return developer1.getLevel().compareTo(developer2.getLevel());
     }
 }

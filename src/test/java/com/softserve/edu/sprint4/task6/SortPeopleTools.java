@@ -86,7 +86,6 @@ public class SortPeopleTools {
         }
     }
 
-    /* TODO Uncomment
 
     public static boolean testSortPersonArray() {
         String[] expected = {
@@ -187,5 +186,5 @@ public class SortPeopleTools {
         return false;
     }
 
-    */
+
 }
