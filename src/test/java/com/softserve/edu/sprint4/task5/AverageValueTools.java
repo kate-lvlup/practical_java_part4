@@ -33,7 +33,6 @@ public class AverageValueTools {
         }
     }
 
-    /* TODO Uncomment
 
     public static boolean averageValueInteger() {
         return ArrayUtil.averageValue(new Array<Integer>(new Integer[]{1, 2, 3, 4, 5})) == 3;
@@ -47,5 +46,5 @@ public class AverageValueTools {
         return ArrayUtil.averageValue(new Array<Number>(new Float[]{2.0f, 4.0f})) == 3.0f;
     }
 
-    */
+
 }
