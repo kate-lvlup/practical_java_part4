@@ -17,7 +17,17 @@ class Array<T> {
 }
 
 public class ArrayUtil {
-    // Write static method averageValue(...) here
-    //
+    public static <T extends Number> double averageValue(Array<T> array) {
+        double sum = 0.0;
+
+        for (int i = 0; i < array.length(); i++) {
+            sum += array.get(i).doubleValue();
+        }
+
+        if (array.length() > 0) {
+            return sum / array.length();
+        }
+        return 0.0;
+    }
 
 }
